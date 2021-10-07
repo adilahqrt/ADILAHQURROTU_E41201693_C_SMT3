@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetailScheduleActivity">
+
+<!--    Menampilkan judul dari mata kuliah-->
+    <TextView
+        android:id="@+id/tvLesson"
+        style="@style/TextAppearance.AppCompat.Title"
+        tools:text="Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    Menampilkan jumlak SKS dari mata kuliah-->
+    <TextView
+        android:id="@+id/tvSKS"
+        android:layout_toRightOf="@id/tvLesson"
+        android:text="sks"
+        android:layout_marginLeft="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    Menampilkan semester tempuh -->
+    <TextView
+        android:id="@+id/tvSemester"
+        android:layout_below="@id/tvLesson"
+        android:text="Semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    Menampilkan separator sebagai pemisah antara semester tempuh dan golongan-->
+    <TextView
+        android:id="@+id/separator"
+        android:text="|"
+        android:layout_below="@id/tvLesson"
+        android:layout_toRightOf="@id/tvSemester"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    Menampilkan golongan-->
+    <TextView
+        android:id="@+id/tvGroup"
+        android:text="Golongan"
+        android:layout_toRightOf="@id/separator"
+        android:layout_below="@id/tvLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    Menampilkan nama dosen yang mengampu mata kuliah -->
+    <TextView
+        android:id="@+id/tvLecture"
+        android:layout_below="@id/tvSemester"
+        android:text="Nama Dosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    Menampilkan jadwal mata kuliah -->
+    <TextView
+        android:id="@+id/tvSchedule"
+        android:text="Jadwal"
+        android:layout_below="@id/tvLecture"
+        android:layout_marginTop="5dp"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    Menampilkan deskripsi dari mata kuliah berupa materi yang akan diajarkan-->
+    <TextView
+        android:id="@+id/tvDescription"
+        android:text="Deskripsi matkul"
+        android:layout_below="@id/tvSchedule"
+        android:layout_marginTop="5dp"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

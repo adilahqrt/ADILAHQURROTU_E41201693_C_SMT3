@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--    Menampilan Judul dari Mata Kuliah-->
+    <TextView
+        android:id="@+id/tvLesson"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"/>
+
+<!--    Menampilkan jumlah SKS dari Mata Kuliah -->
+    <TextView
+        android:id="@+id/tvSKS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tvLesson"
+        android:text="SKS"/>
+
+<!--    Menampilkan jadwal Mata Kuliah-->
+    <TextView
+        android:id="@+id/tvSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLesson"
+        android:text="Waktu Kuliah"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
