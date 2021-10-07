@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Widget</string>
+    <string name="university_logo_content_desc">university logo</string>
+    <string name="register">REGISTER</string>
+    <string name="your_name">Your Name</string>
+    <string name="nim">NIM</string>
+    <string name="study_program">Study Program</string>
+    <string name="birthday">Birthday</string>
+    <string name="no_handphone">No Handphone</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="major_icon">Major Icon</string>
+    <string name="group">Group</string>
+    <string name="calendar_icon">Calendar Icon</string>
+
+
+<!--    Membuat list item yang akan ditampilkan pada spinner-->
+    <string-array name="Prodi">
+        <item>Study Program</item>
+        <item>D3 - Teknik Komputer</item>
+        <item>D3 - Manajemen Informatika</item>
+        <item>D4 - Teknik Informatika</item>
+    </string-array>
+</resources>

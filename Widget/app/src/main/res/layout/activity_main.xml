@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        Menampilkan logo POLIJE-->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logo"
+            android:contentDescription="@string/university_logo_content_desc" />
+
+<!--        Menampilkan teks register-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+<!--        Menampilkan textfield your name-->
+        <EditText
+            style="@style/MyFieldStyle"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/person"
+            android:drawableLeft="@drawable/person"
+            android:hint="@string/your_name"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+<!--        Menampilkan Spinner dropdown program study-->
+        <EditText
+            style="@style/MyFieldStyle.TopSpace"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/nim"
+            android:drawableLeft="@drawable/nim"
+            android:hint="NIM"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <LinearLayout
+            style="@style/MyFieldStyle.TopSpace"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/major_icon"
+                android:src="@drawable/major" />
+
+            <Spinner
+                android:id="@+id/spinner_study_program"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MyFieldStyle.TopSpace"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="3dp">
+
+
+<!--            Menampilkan icon group-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/group"
+                android:src="@drawable/group" />
+
+<!--            Menampilkan autocomplete golongan/group-->
+            <AutoCompleteTextView
+                android:id="@+id/autocompleteGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:completionThreshold="1"
+                android:hint="@string/group"
+                android:textColorHint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/birthday_view"
+            style="@style/MyFieldStyle.TopSpace"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true">
+
+<!--            Menampilkan icon kalender-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/calendar_icon"
+                android:src="@drawable/calendar" />
+
+<!--            Menampilkan textfield tanggal lahir-->
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/birthday"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+<!--        Menampilkan textfield nomor handphone-->
+        <EditText
+            style="@style/MyFieldStyle.TopSpace"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/phone"
+            android:drawableLeft="@drawable/phone"
+            android:hint="@string/no_handphone"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal" />
+
+<!--        Menampilkan textfield email-->
+        <EditText
+            style="@style/MyFieldStyle.TopSpace"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/email"
+            android:drawableLeft="@drawable/email"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+<!--        Menampilkan textfield password-->
+        <EditText
+            style="@style/MyFieldStyle.TopSpace"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+<!--        Menampilkan button SIGN UP-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/sign_up"
+            android:textColor="#00c8ff"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>
