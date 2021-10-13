@@ -1,5 +1,4 @@
-# Android Studio Project
-## Simple Implementation Android RecyclerView
+# Android RecyclerView
 
 ADILAH QURROTU'AINI
 E41201693
