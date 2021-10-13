@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00c8ff"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LessonFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<!--    Menambahkan title MATA KULIAH-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MATA KULIAH"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:layout_gravity="center"/>
+
+<!--    Membuat item list view-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00c8ff"
+    tools:context=".AccountFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        Membuat title YOUR ACCOUNT-->
+        <TextView
+            android:id="@+id/title_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOUR ACCOUNT"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+<!--        Menambahkan image profil-->
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/pp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+<!--        Membuat textview nama -->
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="ADILAH QURROTU'AINI"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bgtf"/>
+
+<!--        Membuat textview nim-->
+        <TextView
+            android:id="@+id/nim"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="E41201693"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgtf"/>
+
+<!--        Membuat textview program studi-->
+        <TextView
+            android:id="@+id/prodi"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="D4 - TEKNIK INFORMATIKA"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgtf"/>
+
+<!--        Membuat textview golongan-->
+        <TextView
+            android:id="@+id/golongan"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="GROUP C"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgtf"/>
+
+<!--        Membuat textview tanggal lahir-->
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="25 MARCH 2002"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgtf"/>
+
+<!--        Membuat textview nomor handphone-->
+        <TextView
+            android:id="@+id/noHP"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="082335114560"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgtf"/>
+
+<!--        Membuat textview email-->
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:text="adilah.qurrotu.aini@gmail.com"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bgtf"/>
+
+<!--        Membuat button edit profile-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_edit"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:text="EDIT PROFILE"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#00c8ff"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:background="@drawable/button_edit"/>
+
+<!--        Membuat button logout-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_logout"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="1dp"
+            android:text="LOGOUT"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:background="@drawable/button"/>
+        
+    </LinearLayout>
+</RelativeLayout>
